@@ -41,8 +41,21 @@ app.controller("dataImagesWork", function ($scope) {
         {   num: 2,
             category: 'web',
             src: "opinion_summarizer/images/preview.jpg",
-            description: 'Opinion Summarizer detects important aspects from product reviews and determine the sentiment ratio for each aspect.',
-            url_details: "opinion_summarizer/details.html" }
+            description: 'Opinion Summarizer is a Web App which determines the sentiment ratio of different aspects from product reviews.',
+            url_details: "opinion_summarizer/details.html"
+        },
+        {   num: 3,
+            category: 'mobile',
+            src: "vr_muffin/images/preview.jpg",
+            description: 'VR Muffin is a FPS Android VR game using Myo and Leap as controller.',
+            url_details: "vr_muffin/details.html"
+        },
+        {   num: 4,
+            category: 'mobile',
+            src: "drunkeneye/images/preview.jpg",
+            description: 'Drunken Eye is an Android App which determines whether you are drunk or not by detecting Horizontal Gaze Nystagmus.',
+            url_details: "drunkeneye/details.html"
+        }
     ];
 
 });
