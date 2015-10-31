@@ -32,15 +32,17 @@ app.controller('PageCtrl', function ( $scope/*, $location, $http */) {
 
 app.controller("dataImagesWork", function ($scope) {
     $scope.images_work = [
-          { num: 1, category: 'web', src: "review_monitor/images/preview.jpg", description: 'Review Monitor is a Web App for monitoring product reviews from Amazon. ', url_details: "review_monitor/details.html" },
-          //{ num: 2, category: 'branding', src: "1100x1057", description: 'Oscar is a decent man. He used to clean porches with pleasure. ', url_details: "details.html" },
-          //{ num: 3, category: 'design', src: "1100x1057", description: 'Oscar is a decent man. He used to clean porches with pleasure. ', url_details: "details.html" },
-          //{ num: 4, category: 'photo', src: "1100x1057", description: 'Oscar is a decent man. He used to clean porches with pleasure. ', url_details: "details.html" },
-          //{ num: 5, category: 'marketing', src: "1100x1057", description: 'Oscar is a decent man. He used to clean porches with pleasure. ', url_details: "details.html" },
-          //{ num: 6, category: 'design', src: "1100x1057", description: 'Oscar is a decent man. He used to clean porches with pleasure. ', url_details: "details.html" },
-          //{ num: 7, category: 'photo', src: "1100x1057", description: 'Oscar is a decent man. He used to clean porches with pleasure. ', url_details: "details.html" },
-          //{ num: 8, category: 'marketing', src: "1100x1057", description: 'Oscar is a decent man. He used to clean porches with pleasure. ', url_details: "details.html" },
-          //{ num: 9, category: 'mobile', src: "1100x1057", description: 'Oscar is a decent man. He used to clean porches with pleasure. ', url_details: "details.html"}
+        {   num: 1,
+            category: 'web',
+            src: "review_monitor/images/preview.jpg",
+            description: 'Review Monitor is a Web App for monitoring product reviews from Amazon.',
+            url_details: "review_monitor/details.html"
+        },
+        {   num: 2,
+            category: 'web',
+            src: "opinion_summarizer/images/preview.jpg",
+            description: 'Opinion Summarizer detects important aspects from product reviews and determine the sentiment ratio for each aspect.',
+            url_details: "opinion_summarizer/details.html" }
     ];
 
 });
