@@ -54,10 +54,11 @@
             $('#contact_form').submit(function (e) {
                 e.preventDefault();
                 var form = $(this);
+                var subject = $("#subject").val();
                 var name = $("#name").val();
                 var email = $("#email").val();
                 var text = $("#message").val();
-                var dataString = 'name=' + name + '&email=' + email + '&message=' + text;
+                var dataString = 'subject=' + subject + '&name=' + name + '&email=' + email + '&message=' + text;
                 var proceed = true;
                 if (name == "") {
                     $('input[name=name]').css('border-color', '#e41919');
@@ -85,6 +86,7 @@
                         data: dataString,
                         success: function () {
                             $('.success').fadeIn(1000);
+                            $("#subject").val("");
                             $("#name").val("");
                             $("#email").val("");
                             $("#message").val("");
