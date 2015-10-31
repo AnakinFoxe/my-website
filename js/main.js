@@ -51,6 +51,12 @@ app.controller("dataImagesWork", function ($scope) {
             url_details: "vr_muffin/details.html"
         },
         {   num: 4,
+            category: 'other',
+            src: "multilingual_subsum/images/preview.jpg",
+            description: 'Multilingual SubSum is a summarizer which supports Chinese, English and Spanish.',
+            url_details: "multilingual_subsum/details.html"
+        },
+        {   num: 5,
             category: 'mobile',
             src: "drunkeneye/images/preview.jpg",
             description: 'Drunken Eye is an Android App which determines whether you are drunk or not by detecting Horizontal Gaze Nystagmus.',
