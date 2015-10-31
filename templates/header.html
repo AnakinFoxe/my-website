@@ -1,0 +1,28 @@
+﻿<header>
+    <div id="top" class="container">
+      <div class="row">
+        <div class="col-md-12 logo">
+            <a href="http://anakinfoxe.com"><div class="content-logo"><img src="images/bighead.jpg" alt="" /></div></a>
+        </div>
+        <nav class="col-md-12">
+          <div class="mini-menu"><i class="fa fa-bars"></i></div>
+          <ul class="menu" auto-active >
+            <li class="cl-effect-11"><a data-hover="HOME" href="#/">Home</a></li>
+            <li class="cl-effect-11"><a data-hover="PROJECTS" href="#/projects">Projects</a></li>
+            <li class="cl-effect-11"><a data-hover="EXPERIENCES" href="#/experiences">Experiences</a></li>
+            <li class="cl-effect-11"><a data-hover="BLOG" href="blog">Blog</a></li>
+            <li class="cl-effect-11"><a data-hover="CONTACT" href="#/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <script>
+      // Mobile menu toggle
+      var mobile_nav = $(".mini-menu");
+      mobile_nav.click(function () {
+          $("#top").find(".menu").toggle(2000);
+      });
+  </script>
+
