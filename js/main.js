@@ -47,7 +47,7 @@ app.controller("dataImagesWork", function ($scope) {
         {   num: 3,
             category: 'mobile',
             src: "vr_muffin/images/preview.jpg",
-            description: 'VR Muffin is a FPS Android VR game using Myo and Leap as controller.',
+            description: 'VR Muffin is a FPS Google Cardboard VR game using Myo and Leap as controller.',
             url_details: "vr_muffin/details.html"
         },
         {   num: 4,
