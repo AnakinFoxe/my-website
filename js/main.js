@@ -1,7 +1,7 @@
 ﻿
-
 var app = angular.module('miniMe', [
-  'ngRoute', 'ngMap', 'ngAnimate'
+    //'angulartics', 'angulartics.google.analytics',
+    'ngRoute', 'ngMap', 'ngAnimate'
 ]);
 
 /**
