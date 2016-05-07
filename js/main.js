@@ -30,33 +30,40 @@ app.controller('PageCtrl', function ( $scope/*, $location, $http */) {
 
 });
 
+// Xing: change this part for projects
 app.controller("dataImagesWork", function ($scope) {
     $scope.images_work = [
         {   num: 1,
+            category: 'mobile',
+            src: "popular_movies/images/preview.png",
+            description: 'An Android app to browse popular movies.',
+            url_details: "popular_movies/details.html"
+        },
+        {   num: 2,
             category: 'web',
             src: "review_monitor/images/preview.jpg",
             description: 'Review Monitor is a Web App for monitoring product reviews from Amazon.',
             url_details: "review_monitor/details.html"
         },
-        {   num: 2,
+        {   num: 3,
             category: 'web',
             src: "opinion_summarizer/images/preview.jpg",
             description: 'Opinion Summarizer is a Web App which determines the sentiment ratio of different aspects from product reviews.',
             url_details: "opinion_summarizer/details.html"
         },
-        {   num: 3,
+        {   num: 4,
             category: 'mobile',
             src: "vr_muffin/images/preview.jpg",
             description: 'VR Muffin is a FPS Google Cardboard VR game using Myo and Leap as controller.',
             url_details: "vr_muffin/details.html"
         },
-        {   num: 4,
+        {   num: 5,
             category: 'other',
             src: "multilingual_subsum/images/preview.jpg",
             description: 'Multilingual SubSum is a summarizer which supports Chinese, English and Spanish.',
             url_details: "multilingual_subsum/details.html"
         },
-        {   num: 5,
+        {   num: 6,
             category: 'mobile',
             src: "drunkeneye/images/preview.jpg",
             description: 'Drunken Eye is an Android App which determines whether you are drunk or not by detecting Horizontal Gaze Nystagmus.',
