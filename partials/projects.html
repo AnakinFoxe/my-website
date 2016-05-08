@@ -31,10 +31,10 @@
                         <li class="col-md-4 my-gallery-animation item grid"
                             ng-repeat="product in images_work | filter:myFilter">
                             <figure class="effect-oscar">
-                                <a href=""><img ng-src="projects_info/{{product.src}}" alt=""/></a>
+                                <a href=""><img ng-src="project/{{product.src}}" alt=""/></a>
                                 <figcaption>
                                     <p>{{product.description}}</p>
-                                    <a href="projects_info/{{product.url_details}}" class="smooth-redirect"></a>
+                                    <a href="project/{{product.url_details}}" class="smooth-redirect"></a>
                                 </figcaption>
                             </figure>
                         </li>
