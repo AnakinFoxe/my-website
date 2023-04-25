@@ -1,11 +1,11 @@
 baseURL: http://anakinfoxe.com/
 languageCode: en-us
-title: Xing Hu
+title: Code & Conquer
 
 theme: PaperMod
 module:
   imports:
-    - path: github.com/adityatelange/hugo-PaperMod
+  - path: github.com/adityatelange/hugo-PaperMod
 
 minify:
   disableXML: true
@@ -16,23 +16,19 @@ menu:
   - name: Blog
     pageRef: /blog
     weight: 10
-      # - name: About
-      #pageRef: /about
-      #weight: 20
-      #profileMode:
-      #enabled: true
 
 params:
   env: production
+  defaultTheme: auto
 
-  homeInfoParams:
-    title: Hi there
-    content: Welcome to my blog
-
-      #profileMode:
-      #enabled: true
-      #title: About Me
-      #subtitle: currently empty
+  profileMode:
+    enabled: true
+    title: Xing Hu
+    subtitle: Software Engineer in the greater Seattle area
+  
+  socialIcons: # optional
+  - name: linkedin
+    url: https://www.linkedin.com/in/anakinfoxe/
 
   showCodeCopyButtons: true
 
