@@ -18,7 +18,8 @@ By default, Kubernetes does not include load balancer provisioners. Therefore, w
 Disable klipper-lb with `--disable servicelb` flag
 
 ```bash
-k3sup install --ip <RPi-Server-IP> --user <RPi-user> --k3s-extra-args '--disable servicelb'
+k3sup install --ip <RPi-Server-IP> --user <RPi-user> \
+          --k3s-extra-args '--disable servicelb'
 ```
 
 ## Installation
