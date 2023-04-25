@@ -1,0 +1,45 @@
+baseURL: http://anakinfoxe.com/
+languageCode: en-us
+title: Xing Hu
+
+theme: PaperMod
+module:
+  imports:
+    - path: github.com/adityatelange/hugo-PaperMod
+
+minify:
+  disableXML: true
+  #minifyOutput: true
+
+menu:
+  main:
+  - name: Blog
+    pageRef: /blog
+    weight: 10
+  - name: About
+    pageRef: /about
+    weight: 20
+    profileMode:
+      enabled: true
+
+params:
+  env: production
+
+  homeInfoParams:
+    title: Hi there wave
+    content: Welcome to my blog
+
+  profileMode:
+    enabled: true
+    title: About Me
+    subtitle: currently empty
+
+  showCodeCopyButtons: true
+
+pygmentsUseClasses: true
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    lineNos: true
+    style: monokai
