@@ -19,7 +19,7 @@ Disable klipper-lb with `--disable servicelb` flag
 
 ```bash
 k3sup install --ip <RPi-Server-IP> --user <RPi-user> \
-          --k3s-extra-args '--disable servicelb'
+     --k3s-extra-args '--disable servicelb'
 ```
 
 ## Installation
@@ -33,6 +33,7 @@ Reference: the [official guide](https://metallb.org/installation/)
 ## IP Address Pool
 
 At here I defined an IP address pool `local-pool` with address range `192.168.10.240` to `192.168.10.250`.
+
 ```yaml
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool
@@ -45,6 +46,7 @@ spec:
 ```
 
 Then advertise the pool with the simplest layer 2 mode (corresponding to layer 3 in OSI model).
+
 ```yaml
 apiVersion: metallb.io/v1beta1
 kind: L2Advertisement

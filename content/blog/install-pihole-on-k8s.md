@@ -52,7 +52,7 @@ serviceDns:
   # assign the preferred IP from the pool
   loadBalancerIP: 192.168.10.250
   annotations:
-	# this annotation make sure we can use the same IP for the two services
+    # this annotation make sure we can use the same IP for the two services
     metallb.universe.tf/allow-shared-ip: pihole
 
 serviceWeb:
@@ -89,6 +89,12 @@ helm install pihole mojo2600/pihole -f values.yaml --namespace pihole
 That's it.
 
 Now, go to the router and set the DNS server IP address to be `192.168.10.250` for the DHCP service , and remove all other DNS servers.
+
+If you made any changes and want to update the existing deployment, use `upgrade` command:
+
+```bash
+helm upgrade pihole mojo2600/pihole -f values.yaml --namespace pihole
+```
 
 ## Future Work
 
