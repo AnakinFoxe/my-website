@@ -16,11 +16,11 @@ menu:
   - name: Blog
     pageRef: /blog
     weight: 10
-  - name: About
-    pageRef: /about
-    weight: 20
-    profileMode:
-      enabled: true
+      # - name: About
+      #pageRef: /about
+      #weight: 20
+      #profileMode:
+      #enabled: true
 
 params:
   env: production
@@ -29,10 +29,10 @@ params:
     title: Hi there wave
     content: Welcome to my blog
 
-  profileMode:
-    enabled: true
-    title: About Me
-    subtitle: currently empty
+      #profileMode:
+      #enabled: true
+      #title: About Me
+      #subtitle: currently empty
 
   showCodeCopyButtons: true
 
