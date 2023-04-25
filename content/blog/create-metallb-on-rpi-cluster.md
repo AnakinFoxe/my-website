@@ -59,3 +59,45 @@ spec:
 ```
 
 That's it. 
+
+## Example
+
+Here's an example of creating a TCP and a UDP load balancers sharing the same IP:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: pihole-tcp
+  namespace: pihole
+  annotations:
+    metallb.universe.tf/allow-shared-ip: pihole
+spec:
+  type: LoadBalancer
+  loadBalancerIP: 192.168.10.250
+  ports:
+    - name: piholetcp
+      protocol: TCP
+      port: 53
+      targetPort: 53
+  selector:
+    app: pihole
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pihole-udp
+  namespace: pihole
+  annotations:
+    metallb.universe.tf/allow-shared-ip: pihole
+spec:
+  type: LoadBalancer
+  loadBalancerIP: 192.168.10.250
+  ports:
+    - name: piholeudp
+      protocol: UDP
+      port: 53
+      targetPort: 53
+  selector:
+    app: pihole
+```
