@@ -1,7 +1,7 @@
 ---
 title: "Setup Wi-Fi for Raspberry Pi 4"
 Summary: "This HOW-TO shows you how to setup wireless connection with Raspberry Pi 4 built-in Wi-Fi."
-date: 2023-04-24T13:39:58-07:00
+date: 2023-04-20T13:39:58-07:00
 tags: ["Raspberry Pi", "Ubuntu"]
 ---
 

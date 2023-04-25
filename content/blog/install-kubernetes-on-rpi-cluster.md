@@ -1,7 +1,7 @@
 ---
 title: "Install Kubernetes on Rpi Cluster"
 summary: "This HOW-TO shows you how to install Kubernetes (k3s) on a Raspberry Pi 4 cluster with k3sup."
-date: 2023-04-24T18:14:59-07:00
+date: 2023-04-22T18:14:59-07:00
 tags: ["Kubernetes","Raspberry Pi", "Ubuntu"]
 ---
 
