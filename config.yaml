@@ -36,6 +36,8 @@ params:
 
   showCodeCopyButtons: true
 
+  comments: true
+
 pygmentsUseClasses: true
 markup:
   highlight:
