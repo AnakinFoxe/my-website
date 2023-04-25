@@ -26,7 +26,7 @@ params:
   env: production
 
   homeInfoParams:
-    title: Hi there wave
+    title: Hi there
     content: Welcome to my blog
 
       #profileMode:
@@ -36,6 +36,8 @@ params:
 
   showCodeCopyButtons: true
 
+  comments: true
+
 pygmentsUseClasses: true
 markup:
   highlight:
@@ -43,3 +45,5 @@ markup:
     guessSyntax: false
     lineNos: true
     style: monokai
+
+disqusShortname: anakinfoxe
