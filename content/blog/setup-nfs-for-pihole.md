@@ -1,13 +1,13 @@
 ---
 title: "Setup NFS for Pi-hole"
-summary: "A simple solution for Pi-hole on a Kubernetes cluster"
+summary: "A simple solution for persisting Pi-hole data on a Kubernetes cluster"
 date: 2023-04-27T16:42:57-07:00
 tags: ["NFS", "Kubernetes", "Raspberry Pi"]
 ---
 
 ## Why
 
-As [previously mentioned](../install-pihole-on-k8s.md), I have successfully deployed Pi-hole on my Kubernetes cluster, which operates on a 3-node Raspberry Pi cluster. One concern I have is that the Pi-hole pod can be created on any node, so it needs to be able to access the same storage from any node in the cluster.
+As [previously mentioned](../install-pihole-on-k8s), I have successfully deployed Pi-hole on my Kubernetes cluster, which operates on a 3-node Raspberry Pi cluster. One concern I have is that the Pi-hole pod can be created on any node, so it needs to be able to access the same storage from any node in the cluster.
 
 I explored [Rook](https://rook.io/) combined with [Ceph](https://rook.io/docs/rook/v1.11/Getting-Started/intro/), which offers a cloud-native distributed storage system. However, after spending a few hours researching and attempting to set it up on my cluster, I discovered that it demands a considerable amount of CPU/memory resources. While it could be a viable solution for transforming a Raspberry Pi cluster into a distributed storage system, I have other plans for my cluster and don't intend to use it solely for storage.
 

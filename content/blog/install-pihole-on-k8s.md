@@ -98,5 +98,5 @@ helm upgrade pihole mojo2600/pihole -f values.yaml --namespace pihole
 
 ## Future Work
 
-- Pi-hole utilizes PersistentVolumeClaim (PVC) and PersistentVolume (PV) to store its configuration and data on the node's local disk. This means that if the pod moves to another node, all data will be lost. We need to ensure that no matter which node the Pi-hole pod is running on, it can always access the same files.
+- [[Done](../setup-nfs-for-pihole)] Pi-hole utilizes PersistentVolumeClaim (PVC) and PersistentVolume (PV) to store its configuration and data on the node's local disk. This means that if the pod moves to another node, all data will be lost. We need to ensure that no matter which node the Pi-hole pod is running on, it can always access the same files.
 - [Maybe] Currently, Pi-hole handles all DNS requests at my home, so if it goes down, my internet is essentially nonfunctional. It might be a good idea to have multiple replicas running to increase the redundancy of the service. However, at this point, it doesn't seem necessary.
