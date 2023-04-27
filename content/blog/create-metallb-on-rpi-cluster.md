@@ -1,6 +1,6 @@
 ---
-title: "Create Metallb on Rpi Cluster"
-summary: "Provision load balancers for the bare metal Kubernetes cluster"
+title: "Create Metallb on Raspberry Pi Cluster"
+summary: "Provision load balancers for the bare metal Kubernetes cluster that is running on a Raspberry Pi cluster."
 date: 2023-04-24T23:09:57-07:00
 tags: ["Kubernetes", "Raspberry Pi", "Network"]
 ---
