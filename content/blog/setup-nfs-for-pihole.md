@@ -1,6 +1,6 @@
 ---
-title: "Setup NFS for Pi-hole on the Kubernetes cluster"
-summary: ""
+title: "Setup NFS for Pi-hole"
+summary: "A simple solution for Pi-hole on a Kubernetes cluster"
 date: 2023-04-27T16:42:57-07:00
 tags: ["NFS", "Kubernetes", "Raspberry Pi"]
 ---
