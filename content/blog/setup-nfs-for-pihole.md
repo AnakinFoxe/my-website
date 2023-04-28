@@ -13,11 +13,53 @@ I explored [Rook](https://rook.io/) combined with [Ceph](https://rook.io/docs/ro
 
 Thus, my other option is NFS, which is supposedly slower but simpler to implement.
 
-## Prerequisite
+## Setup NFS Server
 
-- Setup a NFS server. For me, I plan to move it to a NAS in the future, but since I don't have one right now, I followed [this guide](https://pimylifeup.com/raspberry-pi-nfs/) to setup a NFS server on a Pi node.
+For me, I plan to move it to a NAS in the future, but since I don't have one right now, I followed [this guide](https://pimylifeup.com/raspberry-pi-nfs/) to setup a NFS server on a Pi node.
+
+Install `nfs-kernel-server`
+
+```bash
+sudo apt install nfs-kernel-server
+```
+
+Create a directory to be used, e.g. `/nfs/export`
+
+```bash
+sudo mkdir -p /nfs/export
+sudo chown <RPi-user>:<RPi-user-group> /nfs/export
+```
+
+Find out the `uid` and `gid` of the `<RPi-user>`
+
+```bash
+id <RPi-user>
+```
+
+Update NFS access control file `/etc/exports`
+
+```ini
+/nfs/export 192.168.10/0/24(rw,async,no_subtree_check,all_squash,insecure,anonuid=1000,anongid=1000)
+```
+Check [the guide](https://pimylifeup.com/raspberry-pi-nfs/) for the explanation of the parameters
+
+Finally, restart `nfs-kernel-server`
+
+```bash
+sudo systemctl restart nfs-kernel-server
+```
 
 In the end, there should be a path (say `/nfs/export`) that's readable/writable for the `<RPi-user>` on the NFS server.
+
+### Test the Setup
+
+From another node, mount the path and try it out.
+
+```bash
+sudo mount -t nfs <NFS-server-IP>:/nfs/export /home/<RPi-user>/nfs/
+```
+
+Should be able to read and write any file/directory on the path. `umount` the path once done testing.
 
 ## PersistentVolume and PersistentVolumeClaim
 
