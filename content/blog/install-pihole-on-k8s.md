@@ -1,11 +1,11 @@
 ---
 title: "Install Pi-hole on Kubernetes"
-summary: "This HOW-TO shows you how to install Pi-hole on a Kubernetes cluster running on Raspberry Pi"
+summary: "This HOW-TO shows you how to install Pi-hole on a Kubernetes cluster running on Raspberry Pi cluster"
 date: 2023-04-25T14:45:06-07:00
 tags: ["Kubernetes", "Raspberry Pi", "Network"]
 ---
 
-[Pi-hole]([https://pi-hole.net/](https://pi-hole.net/)) is arguably the number one essential tool for any home lab. I want to use it to block ads and possible malware for every device at home.
+[Pi-hole](https://pi-hole.net/) is arguably the number one essential tool for any home lab. I want to use it to block ads and possible malware for every device at home.
 
 ## Installation
 
@@ -98,5 +98,5 @@ helm upgrade pihole mojo2600/pihole -f values.yaml --namespace pihole
 
 ## Future Work
 
-- Pi-hole utilizes PersistentVolumeClaim (PVC) and PersistentVolume (PV) to store its configuration and data on the node's local disk. This means that if the pod moves to another node, all data will be lost. We need to ensure that no matter which node the Pi-hole pod is running on, it can always access the same files.
+- [[Done](../setup-nfs-for-pihole)] Pi-hole utilizes PersistentVolumeClaim (PVC) and PersistentVolume (PV) to store its configuration and data on the node's local disk. This means that if the pod moves to another node, all data will be lost. We need to ensure that no matter which node the Pi-hole pod is running on, it can always access the same files.
 - [Maybe] Currently, Pi-hole handles all DNS requests at my home, so if it goes down, my internet is essentially nonfunctional. It might be a good idea to have multiple replicas running to increase the redundancy of the service. However, at this point, it doesn't seem necessary.
