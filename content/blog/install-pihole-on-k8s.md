@@ -96,6 +96,8 @@ If you made any changes and want to update the existing deployment, use `upgrade
 helm upgrade pihole mojo2600/pihole -f values.yaml --namespace pihole
 ```
 
+![Pi-hole homepage](/blog/pihole.png)
+
 ## Future Work
 
 - [[Done](../setup-nfs-for-pihole)] Pi-hole utilizes PersistentVolumeClaim (PVC) and PersistentVolume (PV) to store its configuration and data on the node's local disk. This means that if the pod moves to another node, all data will be lost. We need to ensure that no matter which node the Pi-hole pod is running on, it can always access the same files.
