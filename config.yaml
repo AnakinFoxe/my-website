@@ -25,6 +25,9 @@ params:
     enabled: true
     title: Xing Hu
     subtitle: Software Engineer in the greater Seattle area
+    buttons:
+    - name: Enter the Blog
+      url: /blog
   
   socialIcons: # optional
   - name: linkedin
