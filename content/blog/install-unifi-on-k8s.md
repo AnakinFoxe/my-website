@@ -214,7 +214,7 @@ set-inform http://<new-controller-ip>:8080/inform
 
 Note, the username and password could have been changed in "System" -> "Advanced":
 
-![Unifi Device Authentication](/blog/unifi-device-auth.png)
+![Unifi Device Authentication](/blog/unifi-device-auth.png#center)
 
 ## Future Work
 

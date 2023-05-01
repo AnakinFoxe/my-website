@@ -1,41 +1,56 @@
 baseURL: http://anakinfoxe.com/
 languageCode: en-us
 title: Mostly about Tech
-
 theme: PaperMod
 module:
   imports:
   - path: github.com/adityatelange/hugo-PaperMod
-
+disqusShortname: anakinfoxe
+googleAnalytics: G-NXBJD7M5CQ
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: true
 minify:
   disableXML: true
-  #minifyOutput: true
+  minifyOutput: true
+
+params:
+  env: production
+  defaultTheme: auto
+  showToc: true
+  tocOpen: true
+  showCodeCopyButtons: true
+  showBreadCrumbs: true
+  showPostNavLinks: true
+  comments: true
+  homeInfoParams:
+    title: "Hi there \U0001F44B"
+    content: >
+      I'm Xing
+
+
+      🏠 The Greater Seattle area
+
+
+      🧑‍💻 Engineer, Programmer
+
+
+      🙋 Tech, History, Finance
+
+
+  socialIcons:
+  - name: linkedin
+    url: https://www.linkedin.com/in/anakinfoxe/
+  editPost:
+    url: https://github.com/AnakinFoxe/my-website/tree/master/content
+    text: Suggest Changes
+    appendFilePath: true
 
 menu:
   main:
   - name: Blog
     pageRef: /blog
     weight: 10
-
-params:
-  env: production
-  defaultTheme: auto
-
-  profileMode:
-    enabled: true
-    title: Xing Hu
-    subtitle: Software Engineer in the greater Seattle area
-    buttons:
-    - name: Enter the Blog
-      url: /blog
-  
-  socialIcons: # optional
-  - name: linkedin
-    url: https://www.linkedin.com/in/anakinfoxe/
-
-  showCodeCopyButtons: true
-
-  comments: true
 
 pygmentsUseClasses: true
 markup:
@@ -45,5 +60,3 @@ markup:
     lineNos: true
     style: monokai
 
-disqusShortname: anakinfoxe
-googleAnalytics: G-NXBJD7M5CQ

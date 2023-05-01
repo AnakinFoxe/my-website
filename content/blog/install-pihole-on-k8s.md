@@ -3,6 +3,9 @@ title: "Install Pi-hole on Kubernetes"
 summary: "This HOW-TO shows you how to install Pi-hole on a Kubernetes cluster running on Raspberry Pi cluster"
 date: 2023-04-25T14:45:06-07:00
 tags: ["Kubernetes", "Raspberry Pi", "Network"]
+cover:
+    image: "/blog/pihole-cover.jpeg"
+    alt: "Pi-hole homepage"
 ---
 
 [Pi-hole](https://pi-hole.net/) is arguably the number one essential tool for any home lab. I want to use it to block ads and possible malware for every device at home.
