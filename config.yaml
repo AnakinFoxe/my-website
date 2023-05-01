@@ -13,6 +13,10 @@ enableRobotsTXT: true
 minify:
   disableXML: true
   minifyOutput: true
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
 
 params:
   env: production
@@ -48,8 +52,8 @@ params:
 
 menu:
   main:
-  - name: Blog
-    pageRef: /blog
+  - name: Tags
+    url: tags/
     weight: 10
 
 pygmentsUseClasses: true
