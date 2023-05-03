@@ -4,7 +4,7 @@ summary: "A fancy and easy to use self-hosted monitoring tool on my Kubernetes P
 date: 2023-05-03T00:01:05-07:00
 tags: ["Monitoring", "Kubernetes"]
 cover:
-    image: "/blog/uptime-kuma/cover.png"
+    image: "/blog/uptime-kuma/post-cover.png"
     alt: "Uptime Kuma"
 ---
 
