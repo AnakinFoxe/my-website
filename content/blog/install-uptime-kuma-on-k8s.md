@@ -161,3 +161,8 @@ It can even be used to monitor things outside of the home network, for example, 
 You'd be amazed on how many tools can used by Uptime Kuma to send notifications, such as Telegram, Slack, Email etc.. For me the best option is sending notifications to my Discord server:
 
 ![Discord Notification](/blog/uptime-kuma/discord-notification.png#center)
+
+## Reference
+
+- [You need to monitor your stuff RIGHT NOW!!](https://www.youtube.com/watch?v=DbF97IHOZig)
+- [Meet Uptime Kuma, a Fancy Open Source Uptime Monitor for all your HomeLab Monitoring Needs](https://www.youtube.com/watch?v=r_A5NKkAqZM)
