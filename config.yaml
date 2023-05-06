@@ -55,6 +55,9 @@ menu:
   - name: Tags
     url: tags/
     weight: 10
+  - name: Archives
+    url: archives/
+    weight: 20
 
 pygmentsUseClasses: true
 markup:
