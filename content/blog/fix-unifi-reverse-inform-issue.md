@@ -1,6 +1,6 @@
 ---
-title: "Fix an issue with Unifi devices reverse Inform config"
-summary: "Unifi devices kept getting Offline and having a wrong inform address"
+title: "Unifi devices keep reverting inform address"
+summary: "Here is a HOW-TO to solve this issue."
 date: 2023-05-18T12:21:06-07:00
 tags: ["Unifi"]
 ---
