@@ -1,5 +1,5 @@
 ---
-title: "Fix an issue with Unifi devices Reverse Inform Config"
+title: "Fix an issue with Unifi devices reverse Inform config"
 summary: "Unifi devices kept getting Offline and having a wrong inform address"
 date: 2023-05-18T12:21:06-07:00
 tags: ["Unifi"]
